@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ChessConstants.h"
 
 @interface ViewController : UIViewController
 
