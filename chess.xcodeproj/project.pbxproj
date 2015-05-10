@@ -90,7 +90,18 @@
 		0D3640621AF5518C00761242 = {
 			isa = PBXGroup;
 			children = (
-				0D3640971AF5519700761242 /* figures */,
+				0D36409A1AF551DB00761242 /* king_black.png */,
+				0D36409B1AF551DB00761242 /* king_white.png */,
+				0D36409C1AF551DB00761242 /* knight_black.png */,
+				0D36409D1AF551DB00761242 /* knight_white.png */,
+				0D3640981AF551DB00761242 /* bishop_black.png */,
+				0D3640A21AF551DB00761242 /* rook_black.png */,
+				0D3640A31AF551DB00761242 /* rook_white.png */,
+				0D36409E1AF551DB00761242 /* pawn_black.png */,
+				0D36409F1AF551DB00761242 /* pawn_white.png */,
+				0D3640A01AF551DB00761242 /* queen_black.png */,
+				0D3640A11AF551DB00761242 /* queen_white.png */,
+				0D3640991AF551DB00761242 /* bishop_white.png */,
 				0D36406D1AF5518C00761242 /* chess */,
 				0D36408A1AF5518C00761242 /* chessTests */,
 				0D36406C1AF5518C00761242 /* Products */,
@@ -147,25 +158,6 @@
 				0D36408C1AF5518C00761242 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0D3640971AF5519700761242 /* figures */ = {
-			isa = PBXGroup;
-			children = (
-				0D3640981AF551DB00761242 /* bishop_black.png */,
-				0D3640991AF551DB00761242 /* bishop_white.png */,
-				0D36409A1AF551DB00761242 /* king_black.png */,
-				0D36409B1AF551DB00761242 /* king_white.png */,
-				0D36409C1AF551DB00761242 /* knight_black.png */,
-				0D36409D1AF551DB00761242 /* knight_white.png */,
-				0D36409E1AF551DB00761242 /* pawn_black.png */,
-				0D36409F1AF551DB00761242 /* pawn_white.png */,
-				0D3640A01AF551DB00761242 /* queen_black.png */,
-				0D3640A11AF551DB00761242 /* queen_white.png */,
-				0D3640A21AF551DB00761242 /* rook_black.png */,
-				0D3640A31AF551DB00761242 /* rook_white.png */,
-			);
-			name = figures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
