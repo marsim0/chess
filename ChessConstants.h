@@ -11,6 +11,6 @@
 
 #define CELL_SIZE 90
 #define CHESSBOARD_SIZE 720
-#define FIGURE_COORDINATES 45
+
 
 #endif

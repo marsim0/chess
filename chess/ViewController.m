@@ -81,23 +81,23 @@
     for (int i = 0; i < figureImageArray.count; i++) {
         if (i < 3) {
             //добавляем ладью, коня и слона
-            _figureViewFirst = [[UIView alloc] initWithFrame:CGRectMake(FIGURE_COORDINATES*i, koef*FIGURE_COORDINATES, CELL_SIZE, CELL_SIZE)];
-            UIImageView * imageViewFirst = [[UIImageView alloc] initWithFrame:_figureViewFirst.frame];
+            _figureViewFirst = [[UIView alloc] initWithFrame:CGRectMake(CELL_SIZE*i, koef*CELL_SIZE, CELL_SIZE, CELL_SIZE)];
+            UIImageView * imageViewFirst = [[UIImageView alloc] initWithFrame:_figureViewFirst.bounds];
             imageViewFirst.image = [figureImageArray objectAtIndex:i];
             [self.figureViewFirst addSubview:imageViewFirst];
             [self.chessBoard addSubview:self.figureViewFirst];
             
             //добавляем вторых ладью, коня и слона
-            _figureViewSecond = [[UIView alloc] initWithFrame:CGRectMake(FIGURE_COORDINATES*7 - FIGURE_COORDINATES*i, koef*FIGURE_COORDINATES, CELL_SIZE, CELL_SIZE)];
-            UIImageView * imageViewSecond = [[UIImageView alloc] initWithFrame:_figureViewSecond.frame];
+            _figureViewSecond = [[UIView alloc] initWithFrame:CGRectMake(CELL_SIZE*7 - CELL_SIZE*i, koef*CELL_SIZE, CELL_SIZE, CELL_SIZE)];
+            UIImageView * imageViewSecond = [[UIImageView alloc] initWithFrame:_figureViewSecond.bounds];
             imageViewSecond.image = [figureImageArray objectAtIndex:i];
             [self.figureViewSecond addSubview:imageViewSecond];
             [self.chessBoard addSubview:self.figureViewSecond];
             
         } else if (i==4||i==3) {
             //добавляем короля и королеву
-            _figureViewFirst = [[UIView alloc] initWithFrame:CGRectMake(FIGURE_COORDINATES*i, koef*FIGURE_COORDINATES, CELL_SIZE, CELL_SIZE)];
-            UIImageView * imageViewFirst = [[UIImageView alloc] initWithFrame:_figureViewFirst.frame];
+            _figureViewFirst = [[UIView alloc] initWithFrame:CGRectMake(CELL_SIZE*i, koef*CELL_SIZE, CELL_SIZE, CELL_SIZE)];
+            UIImageView * imageViewFirst = [[UIImageView alloc] initWithFrame:_figureViewFirst.bounds];
             imageViewFirst.image = [figureImageArray objectAtIndex:i];
             [self.figureViewFirst addSubview:imageViewFirst];
             [self.chessBoard addSubview:self.figureViewFirst];
@@ -105,8 +105,8 @@
         } else {
         //добавляем пешки
             for (int j=0; j<8; j++) {
-                _figureViewFirst = [[UIView alloc] initWithFrame:CGRectMake(FIGURE_COORDINATES*j, abs(1-koef)*FIGURE_COORDINATES, CELL_SIZE, CELL_SIZE)];
-                UIImageView * imageViewFirst = [[UIImageView alloc] initWithFrame:_figureViewFirst.frame];
+                _figureViewFirst = [[UIView alloc] initWithFrame:CGRectMake(CELL_SIZE*j, abs(1-koef)*CELL_SIZE, CELL_SIZE, CELL_SIZE)];
+                UIImageView * imageViewFirst = [[UIImageView alloc] initWithFrame:_figureViewFirst.bounds];
                 imageViewFirst.image = [figureImageArray objectAtIndex:i];
                 [self.figureViewFirst addSubview:imageViewFirst];
                 [self.chessBoard addSubview:self.figureViewFirst];
